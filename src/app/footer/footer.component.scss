@@ -1,5 +1,24 @@
 @import "../ngmaterial.module/custom-theme.scss";
 
-#footer-id {
-    //background-color: mat-color($custom-theme-primary, default) !important;
-}
+footer {
+    background: whitesmoke;
+    padding-top: 1em !important;
+  }
+
+  #btnSocial {
+    font-size: 2em;
+  }
+
+  footer a {
+    color: mat-color($custom-theme-primary, default);
+    padding: 10px;
+    transition: all .3s ease;
+  }
+ 
+  footer a:hover {
+    color: mat-color($custom-theme-accent, default);
+  }
+
+  #txtCopyright {
+    font-size: 15px;
+  }

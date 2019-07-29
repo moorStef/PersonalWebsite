@@ -1,5 +1,9 @@
 @import "../ngmaterial.module/custom-theme.scss";
 
+#userDetails {
+    margin-top: 1em;
+}
+
 .card-btn {
     color: mat-color($custom-theme-accent, 800);
 }
