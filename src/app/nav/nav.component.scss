@@ -1,0 +1,38 @@
+@import "../ngmaterial.module/custom-theme.scss";
+
+.navbar {
+    background-color: mat-color($custom-theme-primary,800);
+    .nav {
+        align-items: center;
+    } 
+}
+
+.nav-link, .navbar-brand {
+    color: white !important;
+
+    &:hover {
+        color: $accent !important;
+    }
+}
+
+.nav-item {
+    font-size:1.1em;
+}
+
+@media (min-width: 992px){
+    .navbar li {
+        margin-left : 2em;
+        margin-right : 2em;
+    }
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.material-icons.md-light { color:white; }
+.material-icons.md-light.md-inactive { color: white; }
+
+.material-icons {
+    font-size: 32px;
+}

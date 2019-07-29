@@ -1,0 +1,62 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+$custom-theme-primary: mat-palette($mat-blue-gray);
+$custom-theme-accent: mat-palette($mat-cyan, A200, A100, A400);
+$custom-theme-warn: mat-palette($mat-pink);
+
+$primary: mat-color($custom-theme-primary);
+$accent: mat-color($custom-theme-accent);
+$warn: mat-color($custom-theme-warn);
+
+$custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
+
+@include angular-material-theme($custom-theme);
+
+@mixin custom-theme($theme) {
+    @include my-bootstrap-nav-bar($theme);
+    @include my-mat-icon-button($theme);
+}
+
+@mixin my-bootstrap-nav-bar($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+
+    .navbar {
+        background-color: mat-color($primary, darker);
+
+        .nav {
+            align-items: center;
+        }
+
+        .nav-link, .navbar-brand {
+            color: mat-color($primary, default-contrast);
+
+            &:hover {
+                color: mat-color($accent, lighter);
+            }
+        }
+
+        .material-icons:hover {
+            color: mat-color($accent, lighter) !important;
+        }
+    }
+}
+
+@mixin my-mat-icon-button($theme) {
+    $primary: map-get($theme, primary);
+
+    .mat-icon-button {
+        &:hover {
+            .mat-icon {
+                color: mat-color($accent) !important;
+            }
+        }
+        &:active {
+            .mat-icon {
+                color: mat-color($accent) !important;
+            }
+        }
+    }
+}

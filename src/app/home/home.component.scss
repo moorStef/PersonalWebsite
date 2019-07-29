@@ -1,0 +1,13 @@
+@import "../ngmaterial.module/custom-theme.scss";
+
+.card-btn {
+    color: mat-color($custom-theme-accent, 800);
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+}
