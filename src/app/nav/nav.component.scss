@@ -9,6 +9,7 @@
 
 .nav-link, .navbar-brand {
     color: white !important;
+    transition: all .3s ease;
 
     &:hover {
         color: $accent !important;
@@ -35,4 +36,8 @@
 
 .material-icons {
     font-size: 32px;
+}
+
+nav a {
+    
 }
