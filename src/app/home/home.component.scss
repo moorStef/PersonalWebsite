@@ -6,6 +6,9 @@
 
 .card-btn {
     color: mat-color($custom-theme-accent, 800);
+    &:hover {
+        color: mat-color($custom-theme-accent, 800) !important;
+    }
 }
 
 .row {
@@ -14,4 +17,32 @@
 
 p {
     margin: 0;
+}
+
+#main-content {
+    background-color: white;
+}
+
+.lead {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: mat-color($custom-theme-primary, default);
+    border: none;
+    transition: all .3s ease;
+    padding: 5px;
+    margin: 10px;
+    width: 100px;
+
+    &:hover {
+        color: mat-color($custom-theme-primary, 800);
+        background-color: mat-color($custom-theme-accent, default);
+    }
+}
+
+.jumbotron {
+    padding: 32px;
+    margin:0px;
+    word-wrap: normal;
 }
