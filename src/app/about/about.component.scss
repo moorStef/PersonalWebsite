@@ -1,0 +1,24 @@
+@import "../ngmaterial.module/custom-theme.scss";
+
+.strength-tabs {
+    margin-bottom: 50px !important;
+}
+.card {
+    margin-top: 20px;
+    background-color: white;
+    border: 0px;
+}
+
+.btn-primary {
+
+    background-color: $primary;
+    color: white;
+    border: 0px;
+    width: 400px;
+    margin: 10px;
+
+    &:hover {
+        background-color: $accent !important;
+        color: $primary;
+    }
+}
