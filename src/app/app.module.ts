@@ -7,22 +7,24 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { Ngmaterial } from './ngmaterial.module/ngmaterial.module.module';
-import { AboutmeComponent } from './aboutme/aboutme.component';
-import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { ResumeComponent } from './resume/resume.component';
 import { FooterComponent } from './footer/footer.component';
+import { EducationComponent } from './education/education.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    AboutmeComponent,
-    ContactComponent,
     HomeComponent,
-    ResumeComponent,
-    FooterComponent
+    FooterComponent,
+    EducationComponent,
+    ProjectsComponent,
+    ExperienceComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

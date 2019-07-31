@@ -1,10 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
+
 <div>
   <app-nav></app-nav>
-<div>
-<div [@myAnimation]="o.isActivation ? o.activatedRoute : ''">
-  <router-outlet #o="outlet"></router-outlet>
 </div>
+
+<main [@routerTransition]="getState(o)">
+  <router-outlet #o="outlet"></router-outlet>
+</main>
+
 <div>
-  <app-footer></app-footer>
+  <app-footer [delay]="500"></app-footer>
 </div>

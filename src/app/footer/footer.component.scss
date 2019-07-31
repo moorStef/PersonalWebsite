@@ -1,8 +1,23 @@
 @import "../ngmaterial.module/custom-theme.scss";
 
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fa, .footer-copyright {
+  animation: 2s ease-in-out 1 slideInFromBottom;
+
+}
+
 footer {
     background: whitesmoke;
     padding-top: 1em !important;
+    position: relative;
   }
 
   #btnSocial {
